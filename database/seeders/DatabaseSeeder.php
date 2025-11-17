@@ -19,7 +19,8 @@ class DatabaseSeeder extends Seeder
             RoleSeeder::class,
             UserSeeder::class,
             FollowersSeeder::class,
-            CategorySeeder::class
+            CategorySeeder::class,
+            PostSeeder::class
         ]);
     }
 }
