@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Traits\HasMedia;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -15,6 +16,7 @@ class Post extends Model
     use HasFactory;
     use SoftDeletes;
     use Sluggable;
+    use HasMedia;
 
     protected $table = 'posts';
     protected $fillable = [
