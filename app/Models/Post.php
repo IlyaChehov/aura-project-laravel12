@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Models\Traits\HasComments;
+use App\Models\Traits\HasLikes;
 use App\Models\Traits\HasMedia;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -19,6 +20,7 @@ class Post extends Model
     use Sluggable;
     use HasComments;
     use HasMedia;
+    use HasLikes;
 
     protected $table = 'posts';
     protected $fillable
