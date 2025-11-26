@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Models\Traits\HasComments;
+use App\Models\Traits\HasMedia;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -17,6 +18,7 @@ class Post extends Model
     use SoftDeletes;
     use Sluggable;
     use HasComments;
+    use HasMedia;
 
     protected $table = 'posts';
     protected $fillable
