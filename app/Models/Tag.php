@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Traits\HasFilter;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -14,6 +15,7 @@ class Tag extends Model
     use HasFactory;
     use SoftDeletes;
     use Sluggable;
+    use HasFilter;
 
     protected $table = 'tags';
     protected $fillable = [

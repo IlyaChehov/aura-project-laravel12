@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Models\Traits\HasComments;
+use App\Models\Traits\HasFilter;
 use App\Models\Traits\HasLikes;
 use App\Models\Traits\HasMedia;
 use Cviebrock\EloquentSluggable\Sluggable;
@@ -21,6 +22,7 @@ class Post extends Model
     use HasComments;
     use HasMedia;
     use HasLikes;
+    use HasFilter;
 
     protected $table = 'posts';
     protected $fillable
