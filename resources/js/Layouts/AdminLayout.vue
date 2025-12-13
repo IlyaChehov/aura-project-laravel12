@@ -33,7 +33,7 @@
                     <ul class="flex flex-col gap-2 overflow-y-auto font-semibold">
                         <li>
                             <Link
-                                href="route('')"
+                                :href="route('admin.dashboard')"
                                 class="flex items-center gap-2 space-x-3 px-4 py-3 rounded-lg transition-all duration-200 border-4 border-transparent"
                                 :class="$page.url === '/admin'
                                 ? 'bg-[var(--accent-color)] text-[var(--second-text-color)]'
@@ -63,9 +63,9 @@
                         </li>
                         <li>
                             <Link
-                                href="route('')"
+                                :href="route('admin.categories.index')"
                                 class="flex items-center gap-2 space-x-3 px-4 py-3 rounded-lg transition-all duration-200 border-4 border-transparent"
-                                :class="$page.url.startsWith('/admin/posts')
+                                :class="$page.url.startsWith('/admin/categories')
                                 ? 'bg-[var(--accent-color)] text-[var(--second-text-color)]'
                                 : 'hover:border-[var(--accent-color)]'"
                             >
